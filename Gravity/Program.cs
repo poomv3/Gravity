@@ -5,10 +5,10 @@ using System.Numerics;
 // Simple gravity
 
 Vector2 position = new Vector2(15f,30f);
-Vector2 velocity = new Vector2(0f, 0f);
+Vector2 velocity = new Vector2(5f, 0f);
 Vector2 gravity = new Vector2(0f, -9.81f);
 
-string[,] grid = new string[30, 30];
+string[,] grid = new string[35, 100];
 // create the grid with empty elements
 for (int x = 0; x < grid.GetLength(0); x++)
 {
@@ -63,22 +63,3 @@ for (int i = 0; i < steps; i++)
 }
 
 Console.ReadLine();
-
-// Projectile motion
-
-// Vector2 position = new Vector2(0f,20f);
-// Vector2 velocity = new Vector2(5f, 0f);
-// Vector2 gravity = new Vector2(0f, -9.81f);
-//
-// float deltaTime = 0.1f;
-// int steps = 200;
-// float time = 0f;
-//
-// for (int i = 0; i < steps; i++)
-// {
-//     position += velocity * deltaTime;
-//     velocity += gravity * deltaTime;
-//     
-//     Console.WriteLine($"Position is {position}");
-//     
-// }
