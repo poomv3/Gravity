@@ -1,0 +1,29 @@
+radius on grid
+
+if radius = 1
+
+grid shows -> *
+
+if radius = 2
+               *
+grid shows -> ***
+               *
+and so on
+
+
+// after grid is made
+ for (int x = 0; x < grid.GetLength(0); x++)
+    {
+        Console.WriteLine();
+        for (int y = 0; y < grid.GetLength(1); y++)
+        {
+            if (30 - x == posY && y == posX)
+            {
+                Console.Write(grid[x, y] = "O");
+            }
+            else
+            {
+                Console.Write(grid[x, y] = " ");
+            }
+        }
+    }
